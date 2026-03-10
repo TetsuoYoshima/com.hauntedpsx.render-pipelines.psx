@@ -2076,9 +2076,9 @@ namespace HauntedPSX.RenderPipelines.PSX.Runtime
             if (animateMaterials)
             {
 #if UNITY_EDITOR
-                time = Application.isPlaying ? Time.timeSinceLevelLoad : Time.realtimeSinceStartup;
+                time = Application.isPlaying ? Time.realtimeSinceStartup : Time.realtimeSinceStartup;
 #else
-            time = Time.timeSinceLevelLoad;
+            time = Time.realtimeSinceStartup;
 #endif
             }
             else
